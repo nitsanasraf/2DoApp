@@ -17,15 +17,6 @@ struct TodosView: View {
     @State private var searchQuery = ""
     @State var selectedFilter = "Newly Created"
     
-    private func filterise() {
-        print("hio")
-        if (selectedFilter == "Newly Created") {
-            
-        }
-        else if (selectedFilter == "Priority") {
-            viewModel.todos = viewModel.todos.filter { $0.isDone == true }
-        }
-    }
     var body: some View {
         VStack {
             HStack {
